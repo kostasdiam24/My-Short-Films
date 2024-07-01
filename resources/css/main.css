@@ -1,47 +1,67 @@
+/* Base styles */
 body {
     background-color: black;
     color: red;
-    margin: 0px;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Frijole", system-ui, 'Courier New', Courier, monospace;
 }
 
 main {
     text-align: center;
-    font-family: "Frijole", system-ui, 'Courier New', Courier, monospace;
+    padding-bottom: 50px; /* Ensure space for footer */
 }
 
 h1 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 600px;
+    margin: 100px auto 50px;
     padding-top: 200px;
+    width: 90%;
+    max-width: 600px;
 }
 
+/* Introduction section */
 #introduction {
-    margin-top: 100px;
-    width: 500px;
-    display: flex;  
+    margin: 100px auto;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-ul.whatYouCanDo {
-    list-style-type: upper-roman;
+#introduction1 {
+    width: 100%;
 }
 
+#picOfIntro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#picOfIntro img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav styles */
 nav {
     border-bottom: 2px solid red;
     position: fixed;
     width: 100%;
     top: 0;
     background-color: black;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 ul.nav {
-    list-style-type: none;
-    display: inline-flex;
-    flex-direction: row;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     gap: 40px;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 ul.nav a {
@@ -53,13 +73,7 @@ ul.nav a {
     color: white;
 }
 
-.whatYouCanDo {
-    margin-left: 20px;
-    text-align: left;
-}
-
-
-
+/* Footer styles */
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -67,9 +81,14 @@ footer {
     border-top: 2px solid red;
     background-color: rgb(24, 24, 24);
     color: white;
-    font-family: "Frijole", system-ui,'Courier New', Courier, monospace;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0; /* Fix footer to bottom */
+    left: 0;
 }
 
+/* Social media icons */
 .social-media {
     text-align: right;
 }
@@ -175,4 +194,26 @@ ul.example-2 li {
 .example-2 .icon-content a[data-social="youtube"] .filled,
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
     background-color: #ff0000;
+}
+
+/* Email link */
+#Email {
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#Email a {
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#Email a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(68, 68, 68);
+    padding: 10px;
+    border-radius: 20px;
 }
