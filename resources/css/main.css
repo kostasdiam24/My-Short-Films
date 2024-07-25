@@ -44,6 +44,23 @@ h1 {
     height: auto;
 }
 
+
+#FilmCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#FilmCard a {
+    color: white;
+    font-size: 1.5em;
+}
+
+#FilmCard img {
+    width: 80%;
+}
 /* Nav styles */
 nav {
     border-bottom: 2px solid red;
