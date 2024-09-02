@@ -4,7 +4,7 @@ body {
     color: red;
     margin: 0;
     overflow-x: hidden;
-    font-family: "Frijole", system-ui, 'Courier New', Courier, monospace;
+    font-family: massacre,  system-ui, 'Courier New', Courier, monospace;
 }
 
 main {
@@ -60,6 +60,13 @@ h1 {
 
 #FilmCard img {
     width: 80%;
+}
+
+#MyFilms {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 /* Nav styles */
 nav {
